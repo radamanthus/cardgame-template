@@ -13,7 +13,7 @@ function scene:createScene( event )
   local playButton = nil
   local function onPlayPressed ( event )
     if event.phase == "ended" and playButton.isActive then
-      storyboard.gotoScene( "play" )
+      storyboard.gotoScene( "get_bet_scene" )
     end
   end
   playButton = ui.newButton(
