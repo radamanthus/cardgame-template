@@ -90,6 +90,33 @@ _G.buttons = {
     font = "Helvetica",
     textColor = { 255, 255, 255, 255 },
     emboss = false
+  },
+  -- Hit/Stay buttons
+  hit = {
+    defaultSrc = "images/hit.png",
+    defaultX = 79,
+    defaultY = 31,
+    overSrc = "images/hit.png",
+    overX = 79,
+    overY = 31,
+    id = "btnHit",
+    text = "",
+    font = "Helvetica",
+    textColor = { 255, 255, 255, 255 },
+    emboss = false
+  },
+  stay = {
+    defaultSrc = "images/stay.png",
+    defaultX = 79,
+    defaultY = 31,
+    overSrc = "images/stay.png",
+    overX = 79,
+    overY = 31,
+    id = "btnStay",
+    text = "",
+    font = "Helvetica",
+    textColor = { 255, 255, 255, 255 },
+    emboss = false
   }
 }
 

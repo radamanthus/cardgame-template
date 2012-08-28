@@ -7,6 +7,9 @@ Deck = class('Deck')
 -- CLASS (STATIC) METHODS - START
 ------------------------------------------------------------------------------
 function Deck:initialize(params)
+  if (self.cards ~= nil) then
+    print("Prior to initialize: " .. #self.cards)
+  end
   for k,v in pairs(params) do
     self[k] = v
   end
@@ -33,7 +36,7 @@ end
 -- Initialize an empty deck
 ------------------------------------------------------------------------------
 function Deck.static:newEmptyDeck()
-  return Deck.static:initialize({cards={}})
+  return Deck:initialize({cards={}})
 end
 ------------------------------------------------------------------------------
 -- CLASS (STATIC) METHODS - END
